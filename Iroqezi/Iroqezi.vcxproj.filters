@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{cc0dd5f7-5bd0-480b-ae8c-476498f70a94}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Iroqezi">
+      <UniqueIdentifier>{1c5ee01d-3da7-4643-9acd-ab8669d2bb84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{3a5c4301-50e8-492b-a27a-bef0ff88e924}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\AICity">
+      <UniqueIdentifier>{198b6a2e-4df9-4d5b-8524-142332f92004}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Import">
+      <UniqueIdentifier>{5838d6dc-d009-40d5-9b73-00f5f81ce868}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Iroqezi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IroNation.cpp">
+      <Filter>Iroqezi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AICity.cpp">
+      <Filter>Engine\AICity</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Acr\Irokez.nds">
+      <Filter>Iroqezi</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\IroNation.h">
+      <Filter>Iroqezi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AICity.h">
+      <Filter>Engine\AICity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AddScenario.h">
+      <Filter>Engine\Import</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AiPurpose.h">
+      <Filter>Engine\Import</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Import.h">
+      <Filter>Engine\Import</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OneObj.h">
+      <Filter>Engine\Import</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

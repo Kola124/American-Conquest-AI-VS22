@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{68f78ae7-4ab9-48ad-b8cb-40ace938c8ed}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Spain">
+      <UniqueIdentifier>{51a50b54-83d8-4eed-844e-541a5419588f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{d1fb2dac-f69d-4dd2-9e33-d35ec7147089}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\AICity">
+      <UniqueIdentifier>{80c194fe-5458-4813-8fab-37a8ab169399}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Import">
+      <UniqueIdentifier>{b9cccebe-39d6-4778-81a8-c5dd07294a78}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Spain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SpnNation.cpp">
+      <Filter>Spain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AICity.cpp">
+      <Filter>Engine\AICity</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Acr\spain.nds">
+      <Filter>Spain</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\SpnNation.h">
+      <Filter>Spain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AICity.h">
+      <Filter>Engine\AICity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AddScenario.h">
+      <Filter>Engine\Import</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AiPurpose.h">
+      <Filter>Engine\Import</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Import.h">
+      <Filter>Engine\Import</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OneObj.h">
+      <Filter>Engine\Import</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

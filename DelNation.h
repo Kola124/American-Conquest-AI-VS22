@@ -1,0 +1,179 @@
+#if !defined(AMERICAN_CONQUEST_DEL_NATION)
+#define AMERICAN_CONQUEST_DEL_NATION
+
+// Deloware nations header file
+
+#include "Import.h"
+
+class DelUnits {
+public:	
+	GAMEOBJ Kri;	// PEASANT
+	GAMEOBJ Pik;
+	GAMEOBJ Lut;
+	GAMEOBJ Sha;
+	GAMEOBJ S15;
+	GAMEOBJ Vog;
+	GAMEOBJ Vsd;	// vsadnik
+
+	GAMEOBJ Ka1; // Kanoe 1
+	GAMEOBJ Ka3; // Kanoe 2
+	GAMEOBJ Par; // Parom
+};
+
+class DelBuildings {
+public:
+	GAMEOBJ Do1;
+	GAMEOBJ Do2;
+	GAMEOBJ Mel;
+	GAMEOBJ Skl;
+	GAMEOBJ Hra;
+	GAMEOBJ Cen;
+	GAMEOBJ Kre;
+	GAMEOBJ Pst;
+	GAMEOBJ Kaz;
+	GAMEOBJ Ver;
+};
+
+class DelUpgrades {
+public:
+	// Food
+	GAMEOBJ CEN10; //EFFECT_FOOD +2000
+	GAMEOBJ CEN12; //EFFECT_FOOD +3000
+	GAMEOBJ FOOD52; //EFFECT_FOOD +3000
+	GAMEOBJ Mel_GETRES; //EFFECT_FOOD +14
+	GAMEOBJ Mel_GETRES2; //EFFECT_FOOD +25
+	GAMEOBJ CEN01; //EFFECT_FOOD +4
+	GAMEOBJ CEN02; //EFFECT_FOOD +4
+	GAMEOBJ CEN03; //EFFECT_FOOD +5
+
+	// Wood
+	GAMEOBJ Wood1; //CEN29IR
+	GAMEOBJ Wood2; //CEN30IR
+
+	// Dom
+	GAMEOBJ EnDo2; //ENABLE Do2
+	GAMEOBJ EnKre;
+	
+	// Unit
+	GAMEOBJ EnLut;
+	GAMEOBJ EnS15;
+	GAMEOBJ EnVog;
+
+	// Kri
+	GAMEOBJ KriBu1;	// -15% build speed
+	GAMEOBJ KriBu2;	// -25% build speed
+
+	// Warriors
+	
+	// Pik
+	GAMEOBJ PikLife1; //CEN58DE MORELIFE +1000%
+
+	GAMEOBJ PikA2;
+	GAMEOBJ PikA3;
+	GAMEOBJ PikA4;
+	GAMEOBJ PikA5;
+	GAMEOBJ PikA6;
+	GAMEOBJ PikA7;
+	GAMEOBJ PikS2;
+	GAMEOBJ PikS3;
+	GAMEOBJ PikS4;
+	GAMEOBJ PikS5;
+	GAMEOBJ PikS6;
+	GAMEOBJ PikS7;
+
+	// Lut
+	GAMEOBJ LutRaz1; //DelKaz(DE)RAZBROS
+	GAMEOBJ LutRaz2; //DelKaz(DE)RAZBROS1
+	GAMEOBJ LutStrike1; //CEN61DE DAMAGE +5
+
+	GAMEOBJ LutA2; //DelLut(DE)ATTACK
+	GAMEOBJ LutA3;
+	GAMEOBJ LutA4;
+	GAMEOBJ LutA5;
+	GAMEOBJ LutA6;
+	GAMEOBJ LutA7;
+
+	GAMEOBJ LutS2; //DelLut(DE)SHIELD
+	GAMEOBJ LutS3;
+	GAMEOBJ LutS4;
+	GAMEOBJ LutS5;
+	GAMEOBJ LutS6;
+	GAMEOBJ LutS7;
+
+	// Str
+	GAMEOBJ EnStr; //HurStr(HU)ENABLE
+
+	// attack
+	GAMEOBJ StrAtt; //HurS15(HU)ATTACK
+	GAMEOBJ StrAtt3;
+	GAMEOBJ StrAtt4;
+	GAMEOBJ StrAtt5;
+	GAMEOBJ StrAtt6;
+	GAMEOBJ StrAtt7;
+	// defence
+	GAMEOBJ StrDef;
+	GAMEOBJ StrDef3;
+	GAMEOBJ StrDef4;
+	GAMEOBJ StrDef5;
+	GAMEOBJ StrDef6;
+	GAMEOBJ StrDef7;
+
+	// Sha
+	GAMEOBJ ShaBuild1; //CEN13HU
+	GAMEOBJ ShaMedic1; //CEN14HU
+	GAMEOBJ ShaLife1; //CEN15HU
+
+	// Horses
+	GAMEOBJ EnVsd; //SIUKRE(IR)ENABLE
+	// attack
+	GAMEOBJ VsdAtt; //PueVsd(IR)ATTACK
+	GAMEOBJ VsdAtt3; //PueVsd(IR)ATTACK3
+	GAMEOBJ VsdAtt4; //PueVsd(IR)ATTACK4
+	GAMEOBJ VsdAtt5; //PueVsd(IR)ATTACK5
+	GAMEOBJ VsdAtt6; //PueVsd(IR)ATTACK6
+	GAMEOBJ VsdAtt7; //PueVsd(IR)ATTACK7
+	// deffence
+	GAMEOBJ VsdDef; //PueVsd(IR)SHIELD
+	GAMEOBJ VsdDef3; //PueVsd(IR)SHIELD3
+	GAMEOBJ VsdDef4; //PueVsd(IR)SHIELD4
+	GAMEOBJ VsdDef5; //PueVsd(IR)SHIELD5
+	GAMEOBJ VsdDef6; //PueVsd(IR)SHIELD6
+	GAMEOBJ VsdDef7; //PueVsd(IR)SHIELD7
+
+	// Parom
+	GAMEOBJ ParSpeed1; //CEN102DE
+	GAMEOBJ ParSpeed2; //CEN103DE
+	GAMEOBJ ParSpeed3; //CEN104DE
+	GAMEOBJ ParSpeed4; //CEN105DE
+	GAMEOBJ ParSpeed5; //CEN106DE
+	GAMEOBJ ParSpeed6; //CEN107DE
+
+	// Kanoe 3 build speed
+	GAMEOBJ Ka3Build1; //CEN96DE
+	GAMEOBJ Ka3Build2; //CEN97DE
+	GAMEOBJ Ka3Build3; //CEN98DE
+	GAMEOBJ Ka3Build4; //CEN99DE
+	GAMEOBJ Ka3Build5; //CEN100DE
+	GAMEOBJ Ka3Build6; //CEN101DE
+
+	// Fishing
+	GAMEOBJ Ka1Fishing1; //CEN90DE
+	GAMEOBJ Ka1Fishing2; //CEN91DE
+	GAMEOBJ Ka1Fishing3; //CEN92DE
+	GAMEOBJ Ka1Fishing4; //CEN93DE
+	GAMEOBJ Ka1Fishing5; //CEN94DE
+	GAMEOBJ Ka1Fishing6; //CEN95DE
+
+};
+
+// FIELD(MA)       FIELD
+class DelNation {
+public:
+	DelNation();
+	DelUnits Unit;
+	DelBuildings Build;
+	DelUpgrades Upg;
+};
+extern DelNation Del;
+
+#endif

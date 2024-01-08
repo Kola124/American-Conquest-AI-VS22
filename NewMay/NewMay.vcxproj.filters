@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{d1d5a932-f068-40de-be15-835112754c83}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="May">
+      <UniqueIdentifier>{f356584a-561b-4651-b0bf-21fbb4a2cae3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{bd905d44-b9ab-4e55-9bef-b4dc9bda025b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\AICity">
+      <UniqueIdentifier>{4b0f2be5-0a8b-4b49-b529-1c1219d9f6eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Import">
+      <UniqueIdentifier>{33d99993-7da9-436a-b0d1-fd0192b51a97}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NewMay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MayNation.cpp">
+      <Filter>May</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AICity.cpp">
+      <Filter>Engine\AICity</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Acr\May.NDS">
+      <Filter>May</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\MayNation.h">
+      <Filter>May</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AICity.h">
+      <Filter>Engine\AICity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AddScenario.h">
+      <Filter>Engine\Import</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AiPurpose.h">
+      <Filter>Engine\Import</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Import.h">
+      <Filter>Engine\Import</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OneObj.h">
+      <Filter>Engine\Import</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{054b19bc-eecf-4bc5-8260-e8afe5fbe219}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="England">
+      <UniqueIdentifier>{fa9302dc-a60e-45c0-8192-07816111c26a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{5c7d49a8-8333-4b6d-9049-a483b3d0d199}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\AICity">
+      <UniqueIdentifier>{3de20781-d2c7-40a2-b0a2-6afb1f6a1765}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Import">
+      <UniqueIdentifier>{265db441-d905-472c-89f3-59287dfa9c44}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="England.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EngNation.cpp">
+      <Filter>England</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AICity.cpp">
+      <Filter>Engine\AICity</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Acr\england.nds">
+      <Filter>England</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\EngNation.h">
+      <Filter>England</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AICity.h">
+      <Filter>Engine\AICity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AddScenario.h">
+      <Filter>Engine\Import</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AiPurpose.h">
+      <Filter>Engine\Import</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Import.h">
+      <Filter>Engine\Import</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OneObj.h">
+      <Filter>Engine\Import</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

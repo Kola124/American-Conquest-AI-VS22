@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8cb146b8-b014-4d1f-aa97-860dcf0e601e}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Aztecs">
+      <UniqueIdentifier>{71a84dd9-3a93-4f07-9c8d-4c5bafb8b6bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{fdf516b3-1c07-4737-8b48-f72d0c6fc68b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\AICity">
+      <UniqueIdentifier>{0286cc92-b583-4ae6-add0-1845d11c2234}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Import">
+      <UniqueIdentifier>{4d920b55-fe7d-4b7e-a5b5-4f35097b5dfa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Aztecs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AztNation.cpp">
+      <Filter>Aztecs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AICity.cpp">
+      <Filter>Engine\AICity</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Acr\Actec.nds">
+      <Filter>Aztecs</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\AztNation.h">
+      <Filter>Aztecs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AICity.h">
+      <Filter>Engine\AICity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AddScenario.h">
+      <Filter>Engine\Import</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AiPurpose.h">
+      <Filter>Engine\Import</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Import.h">
+      <Filter>Engine\Import</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OneObj.h">
+      <Filter>Engine\Import</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

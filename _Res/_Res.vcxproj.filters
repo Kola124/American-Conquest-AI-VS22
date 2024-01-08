@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="md">
+      <UniqueIdentifier>{67d10116-c03e-4f4f-9744-66216eefbea5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Nations">
+      <UniqueIdentifier>{9a14b9a9-e72d-4ad5-8687-f123077b6fb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Nations\Deloware">
+      <UniqueIdentifier>{a509c852-769b-49db-a4a9-0897d31fedc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Nations\May">
+      <UniqueIdentifier>{bace3a42-73f3-4029-b633-3a2543213238}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Nations\Spain">
+      <UniqueIdentifier>{871c7617-3094-4685-a3a3-a1455801ff72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Nations\Aztecs">
+      <UniqueIdentifier>{4ca359aa-d635-4eb9-ab14-4dd00ff06d04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Nations\Hurons">
+      <UniqueIdentifier>{4cfbd728-7b00-4f09-8097-f8aaee487b1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Nations\Iroqezi">
+      <UniqueIdentifier>{2f4087aa-e262-4f24-90b3-028ecb5f3bbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Nations\Pueblo">
+      <UniqueIdentifier>{c47ad76e-3094-4cd8-8643-71c515996336}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Nations\Incs">
+      <UniqueIdentifier>{fb3b6269-5005-4f94-8268-19a788c6501f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Nations\Siu">
+      <UniqueIdentifier>{10e55c66-9282-456b-a1a5-3d3172037f9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Nations\France">
+      <UniqueIdentifier>{0bdff7f7-2737-428d-bc6d-fb7175c2f746}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Nations\England">
+      <UniqueIdentifier>{0a9963af-0199-4a72-a795-4eaf31e10134}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Nations\USA">
+      <UniqueIdentifier>{ad8f975c-3c57-49d5-84b7-c5f853493d9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{9a9c8ce3-669f-4af6-9f8b-cc6f88360fe0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\AICity">
+      <UniqueIdentifier>{a2da5618-29aa-4d23-9ba3-c5712eb758b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Import">
+      <UniqueIdentifier>{90601c20-4237-4054-98e3-7d7abad4e5de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="old">
+      <UniqueIdentifier>{02e7b6f6-5257-49dd-880a-599d2abb2482}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="old\AI 0">
+      <UniqueIdentifier>{ebb60e60-4350-4ce9-b5ee-06328d0d6fd1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Acr\MayKre.MD">
+      <Filter>md</Filter>
+    </None>
+    <None Include="..\..\..\Acr\MayLut.MD">
+      <Filter>md</Filter>
+    </None>
+    <None Include="..\..\..\Acr\SpnAlb.md">
+      <Filter>md</Filter>
+    </None>
+    <None Include="..\..\..\Acr\SpnMus.MD">
+      <Filter>md</Filter>
+    </None>
+    <None Include="..\..\..\Acr\SpnS15.MD">
+      <Filter>md</Filter>
+    </None>
+    <None Include="..\..\..\Acr\Delavar.nds">
+      <Filter>Nations\Deloware</Filter>
+    </None>
+    <None Include="..\..\..\Acr\May.NDS">
+      <Filter>Nations\May</Filter>
+    </None>
+    <None Include="..\..\..\Acr\spain.nds">
+      <Filter>Nations\Spain</Filter>
+    </None>
+    <None Include="..\..\..\Acr\Actec.nds">
+      <Filter>Nations\Aztecs</Filter>
+    </None>
+    <None Include="..\..\..\Acr\Huroni.nds">
+      <Filter>Nations\Hurons</Filter>
+    </None>
+    <None Include="..\..\..\Acr\Irokez.nds">
+      <Filter>Nations\Iroqezi</Filter>
+    </None>
+    <None Include="..\..\..\Acr\Pueblo.NDS">
+      <Filter>Nations\Pueblo</Filter>
+    </None>
+    <None Include="..\..\..\Acr\Incas.nds">
+      <Filter>Nations\Incs</Filter>
+    </None>
+    <None Include="..\..\..\Acr\Siu.nds">
+      <Filter>Nations\Siu</Filter>
+    </None>
+    <None Include="..\..\..\Acr\France.nds">
+      <Filter>Nations\France</Filter>
+    </None>
+    <None Include="..\..\..\Acr\england.nds">
+      <Filter>Nations\England</Filter>
+    </None>
+    <None Include="..\..\..\Acr\USA.nds">
+      <Filter>Nations\USA</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\DelNation.cpp">
+      <Filter>Nations\Deloware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MayNation.cpp">
+      <Filter>Nations\May</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SpnNation.cpp">
+      <Filter>Nations\Spain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AztNation.cpp">
+      <Filter>Nations\Aztecs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HurNation.cpp">
+      <Filter>Nations\Hurons</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IroNation.cpp">
+      <Filter>Nations\Iroqezi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PueNation.cpp">
+      <Filter>Nations\Pueblo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IncNation.cpp">
+      <Filter>Nations\Incs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SiuNation.cpp">
+      <Filter>Nations\Siu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FraNation.cpp">
+      <Filter>Nations\France</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EngNation.cpp">
+      <Filter>Nations\England</Filter>
+    </ClCompile>
+    <ClCompile Include="..\USANation.cpp">
+      <Filter>Nations\USA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AICity.cpp">
+      <Filter>Engine\AICity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ai0\AIArmy0.cpp">
+      <Filter>old\AI 0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ai0\AIBase0.cpp">
+      <Filter>old\AI 0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ai0\AIBranch0.cpp">
+      <Filter>old\AI 0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ai0\AIBrigade0.cpp">
+      <Filter>old\AI 0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ai0\AIBuilding0.cpp">
+      <Filter>old\AI 0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ai0\AIEnemyArmy0.cpp">
+      <Filter>old\AI 0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ai0\AIOrder0.cpp">
+      <Filter>old\AI 0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ai0\AIPlayer0.cpp">
+      <Filter>old\AI 0</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\DelNation.h">
+      <Filter>Nations\Deloware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MayNation.h">
+      <Filter>Nations\May</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SpnNation.h">
+      <Filter>Nations\Spain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AztNation.h">
+      <Filter>Nations\Aztecs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HurNation.h">
+      <Filter>Nations\Hurons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IroNation.h">
+      <Filter>Nations\Iroqezi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PueNation.h">
+      <Filter>Nations\Pueblo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IncNation.h">
+      <Filter>Nations\Incs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SiuNation.h">
+      <Filter>Nations\Siu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FraNation.h">
+      <Filter>Nations\France</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EngNation.h">
+      <Filter>Nations\England</Filter>
+    </ClInclude>
+    <ClInclude Include="..\USANation.h">
+      <Filter>Nations\USA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AICity.h">
+      <Filter>Engine\AICity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AddScenario.h">
+      <Filter>Engine\Import</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AiPurpose.h">
+      <Filter>Engine\Import</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Import.h">
+      <Filter>Engine\Import</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OneObj.h">
+      <Filter>Engine\Import</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Ai0\AIArmy0.h">
+      <Filter>old\AI 0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Ai0\AIBase0.h">
+      <Filter>old\AI 0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Ai0\AIBranch0.h">
+      <Filter>old\AI 0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Ai0\AIBrigade0.h">
+      <Filter>old\AI 0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Ai0\AIBuilding0.h">
+      <Filter>old\AI 0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Ai0\AIEnemyArmy0.h">
+      <Filter>old\AI 0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Ai0\AIHeader0.h">
+      <Filter>old\AI 0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Ai0\AIOrder0.h">
+      <Filter>old\AI 0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Ai0\AIPlayer0.h">
+      <Filter>old\AI 0</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\Acr\Text\AI.txt" />
+  </ItemGroup>
+</Project>

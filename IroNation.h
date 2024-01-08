@@ -1,0 +1,191 @@
+#if !defined(AMERICAN_CONQUEST_Iro_NATION)
+#define AMERICAN_CONQUEST_Iro_NATION
+
+// Irooware nations header file
+
+#include "Import.h"
+
+class IroUnits {
+public:	
+	GAMEOBJ Kri;	// PEASANT
+	GAMEOBJ Tam;
+	GAMEOBJ Lut;
+	GAMEOBJ Sha;
+	GAMEOBJ S15;
+	GAMEOBJ Vog;
+	GAMEOBJ Vsd;	// vsadnik
+
+	GAMEOBJ Ka1; // Kanoe 1
+	GAMEOBJ Ka3; // Kanoe 2
+	GAMEOBJ Par; // Parom
+};
+
+class IroBuildings {
+public:
+	GAMEOBJ Do1;
+	GAMEOBJ Do2;
+	GAMEOBJ Mel;
+	GAMEOBJ Skl;
+	GAMEOBJ Hra;
+	GAMEOBJ Cen;
+	GAMEOBJ Kre;
+	GAMEOBJ Stb;
+	GAMEOBJ Pst;
+	GAMEOBJ Ver;
+};
+
+class IroUpgrades {
+public:
+	// Food
+	GAMEOBJ CEN01; //EFFECT_FOOD +4
+	GAMEOBJ CEN02; //EFFECT_FOOD +4
+	GAMEOBJ CEN03; //EFFECT_FOOD +5
+	GAMEOBJ CEN10; //EFFECT_FOOD +2000
+	GAMEOBJ Mel_GETRES; //EFFECT_FOOD +14
+	GAMEOBJ Mel_GETRES2; //EFFECT_FOOD +25
+	GAMEOBJ CEN52; //EFFECT_FOOD +3000
+	GAMEOBJ CEN12; //EFFECT_FOOD +3000
+
+	// Wood
+	GAMEOBJ Wood1; //CEN29IR
+	GAMEOBJ Wood2; //CEN30IR
+
+	// Dom 2
+	GAMEOBJ EnDo2; //IroDo2(IR)ENABLE
+
+	// Horses
+	GAMEOBJ EnVsd; //SIUKRE(IR)ENABLE
+	// attack
+	GAMEOBJ VsdAtt; //PueVsd(IR)ATTACK
+	GAMEOBJ VsdAtt3; //PueVsd(IR)ATTACK3
+	GAMEOBJ VsdAtt4; //PueVsd(IR)ATTACK4
+	GAMEOBJ VsdAtt5; //PueVsd(IR)ATTACK5
+	GAMEOBJ VsdAtt6; //PueVsd(IR)ATTACK6
+	GAMEOBJ VsdAtt7; //PueVsd(IR)ATTACK7
+	// deffence
+	GAMEOBJ VsdDef; //PueVsd(IR)SHIELD
+	GAMEOBJ VsdDef3; //PueVsd(IR)SHIELD3
+	GAMEOBJ VsdDef4; //PueVsd(IR)SHIELD4
+	GAMEOBJ VsdDef5; //PueVsd(IR)SHIELD5
+	GAMEOBJ VsdDef6; //PueVsd(IR)SHIELD6
+	GAMEOBJ VsdDef7; //PueVsd(IR)SHIELD7
+
+	// Peasant
+	// speed
+	GAMEOBJ KriBuildSpeed1; //BUILD GRP 1 DelKri(IR) -15%
+	GAMEOBJ KriBuildSpeed2; //BUILD GRP 1 DelKri(IR) -25%
+	// life
+	GAMEOBJ KriIR; //MORELIFE GRP 1 DelKri(IR) +20%
+	GAMEOBJ KriIR3; //MORELIFE GRP 1 DelKri(IR) +30%
+	GAMEOBJ KriIR4; //MORELIFE GRP 1 DelKri(IR) +40%
+	GAMEOBJ KriIR5; //MORELIFE GRP 1 DelKri(IR) +50%
+	GAMEOBJ KriIR6; //MORELIFE GRP 1 DelKri(IR) +60%
+	GAMEOBJ KriIR7; //MORELIFE GRP 1 DelKri(IR) +70%
+	// attack
+	GAMEOBJ KriAtt; //DelKri(IR)ATTACK
+	GAMEOBJ KriAtt3; //DelKri(IR)ATTACK3
+	GAMEOBJ KriAtt4; //DelKri(IR)ATTACK4
+	GAMEOBJ KriAtt5; //DelKri(IR)ATTACK5
+	GAMEOBJ KriAtt6; //DelKri(IR)ATTACK6
+	GAMEOBJ KriAtt7; //DelKri(IR)ATTACK7
+	// defence
+	GAMEOBJ KriDef; //DelKri(IR)SHIELD
+	GAMEOBJ KriDef3; //DelKri(IR)SHIELD3
+	GAMEOBJ KriDef4; //DelKri(IR)SHIELD4
+	GAMEOBJ KriDef5; //DelKri(IR)SHIELD5
+	GAMEOBJ KriDef6; //DelKri(IR)SHIELD6
+	GAMEOBJ KriDef7; //DelKri(IR)SHIELD7
+
+	// Tam
+	GAMEOBJ EnTam; //IroTam(IR)ENABLE
+
+	GAMEOBJ Strike1; //CEN58IR
+	
+	// attack
+	GAMEOBJ TamAtt; //IroTam(IR)ATTACK
+	GAMEOBJ TamAtt3;
+	GAMEOBJ TamAtt4;
+	GAMEOBJ TamAtt5;
+	GAMEOBJ TamAtt6;
+	GAMEOBJ TamAtt7;
+
+	// defence
+	GAMEOBJ TamDef; //IroTam(IR)SHIELD
+	GAMEOBJ TamDef3; //IroTam(IR)SHIELD3
+	GAMEOBJ TamDef4; //IroTam(IR)SHIELD4
+	GAMEOBJ TamDef5; //IroTam(IR)SHIELD5
+	GAMEOBJ TamDef6; //IroTam(IR)SHIELD6
+	GAMEOBJ TamDef7; //IroTam(IR)SHIELD7
+
+	// Lut
+	GAMEOBJ EnLut; //IroLut(IR)ENABLE
+
+	GAMEOBJ LutPerc1; //IroKre(IR)RAZBROS
+	GAMEOBJ LutPerc2; //IroKre(IR)RAZBROS1
+
+	GAMEOBJ LutLife1; //CEN61IR
+
+	// attack
+	GAMEOBJ LutAtt; //IroLut(IR)ATTACK
+	GAMEOBJ LutAtt3; //IroLut(IR)ATTACK3
+	GAMEOBJ LutAtt4; //IroLut(IR)ATTACK4
+	GAMEOBJ LutAtt5; //IroLut(IR)ATTACK5
+	GAMEOBJ LutAtt6; //IroLut(IR)ATTACK6
+	GAMEOBJ LutAtt7; //IroLut(IR)ATTACK7
+
+	// defence
+	GAMEOBJ LutDef; //IroLut(IR)SHIELD
+	GAMEOBJ LutDef3; //IroLut(IR)SHIELD3
+	GAMEOBJ LutDef4; //IroLut(IR)SHIELD4
+	GAMEOBJ LutDef5; //IroLut(IR)SHIELD5
+	GAMEOBJ LutDef6; //IroLut(IR)SHIELD6
+	GAMEOBJ LutDef7; //IroLut(IR)SHIELD7
+
+	// Str
+	GAMEOBJ EnStr; //IroStr(IR)ENABLE
+
+	// Vog
+	GAMEOBJ EnVog; //IroVog(IR)ENABLE
+
+	// Sha
+	GAMEOBJ ShaBuild1; //CEN13IR
+	GAMEOBJ ShaMedic1; //CEN14IR
+	GAMEOBJ ShaLife1; //CEN15IR
+
+	// Parom
+	GAMEOBJ ParSpeed1; //CEN102IR
+	GAMEOBJ ParSpeed2; //CEN103IR
+	GAMEOBJ ParSpeed3; //CEN104IR
+	GAMEOBJ ParSpeed4; //CEN105IR
+	GAMEOBJ ParSpeed5; //CEN106IR
+	GAMEOBJ ParSpeed6; //CEN107IR
+
+	// Kanoe 3 build speed
+	GAMEOBJ Ka3Build1; //CEN96IR
+	GAMEOBJ Ka3Build2; //CEN97IR
+	GAMEOBJ Ka3Build3; //CEN98IR
+	GAMEOBJ Ka3Build4; //CEN99IR
+	GAMEOBJ Ka3Build5; //CEN100IR
+	GAMEOBJ Ka3Build6; //CEN101IR
+
+	// Fishing
+	GAMEOBJ Ka1Fishing1; //CEN90IR
+	GAMEOBJ Ka1Fishing2; //CEN91IR
+	GAMEOBJ Ka1Fishing3; //CEN92IR
+	GAMEOBJ Ka1Fishing4; //CEN93IR
+	GAMEOBJ Ka1Fishing5; //CEN94IR
+	GAMEOBJ Ka1Fishing6; //CEN95IR
+};
+
+// FIELD(MA)       FIELD
+class IroNation {
+public:
+	IroNation();
+	IroUnits Unit;
+	IroBuildings Build;
+	IroUpgrades Upg;
+};
+extern IroNation Iro;
+
+#endif
+

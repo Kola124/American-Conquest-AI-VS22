@@ -1,0 +1,180 @@
+#if !defined(AMERICAN_CONQUEST_MAY_NATION)
+#define AMERICAN_CONQUEST_MAY_NATION
+
+#if _MSC_VER > 1000
+#pragma once
+#endif // _MSC_VER > 1000
+
+#include "Import.h"
+
+class MayUnits {
+public:	
+	GAMEOBJ Pik;
+	GAMEOBJ Lut;
+	GAMEOBJ Sha;
+	GAMEOBJ Vog;
+	GAMEOBJ Voi;
+	GAMEOBJ Kri; //PEASANT
+
+	GAMEOBJ Ka1; // Kanoe 1
+	GAMEOBJ Ka3; // Kanoe 2
+	GAMEOBJ Par; // Parom
+};
+
+class MayBuildings {
+public:
+	GAMEOBJ Rud;
+	GAMEOBJ Iro;
+	GAMEOBJ Coa;
+	GAMEOBJ Stn;
+	GAMEOBJ Do1;
+	GAMEOBJ Do2;
+	GAMEOBJ Do3;
+	GAMEOBJ Mel;
+	GAMEOBJ Skl;
+	GAMEOBJ Hra;
+	GAMEOBJ Cen;
+	GAMEOBJ Kre;
+	GAMEOBJ Blg;	
+	GAMEOBJ Bl2;
+	GAMEOBJ Ver;
+	GAMEOBJ Ka1;
+	GAMEOBJ Ka3;
+	GAMEOBJ Par;
+};
+
+class MayUpgrades {
+public:
+	// Food
+	GAMEOBJ CEN10MA; //EFFECT_FOOD +2000
+	GAMEOBJ CEN12MA; //EFFECT_FOOD +3000
+	GAMEOBJ MAY52MA; //EFFECT_FOOD +3000
+	GAMEOBJ Mel_GETRES; //EFFECT_FOOD +14
+	GAMEOBJ Mel_GETRES2; //EFFECT_FOOD +25
+	GAMEOBJ CEN01MA; //EFFECT_FOOD +4
+	GAMEOBJ CEN02MA; //EFFECT_FOOD +4
+	GAMEOBJ CEN03MA; //EFFECT_FOOD +5
+	GAMEOBJ FieldDur3;
+	// Dom
+	GAMEOBJ EnDo1; //ENABLE Do1
+	GAMEOBJ EnDo2; //ENABLE Do2	
+	// Unit
+	GAMEOBJ EnLut;
+	GAMEOBJ EnVoi;
+	GAMEOBJ EnVog;
+	
+	//Build Speed
+	GAMEOBJ BldSpd;
+
+	// Shaman Upgrades
+	GAMEOBJ ShaSpd;
+	GAMEOBJ	ShaHeal;
+	GAMEOBJ	ShaLife;
+	// Mine
+	GAMEOBJ Gld0;
+	GAMEOBJ Gld1;
+	GAMEOBJ Gld2;
+	GAMEOBJ Gld3;
+	GAMEOBJ Gld4;
+	GAMEOBJ Gld5;
+
+	GAMEOBJ Stn0;
+	GAMEOBJ Stn1;
+	GAMEOBJ Stn2;
+	GAMEOBJ Stn3;
+	GAMEOBJ Stn4;
+	GAMEOBJ Stn5;
+
+	GAMEOBJ Iro0;
+	GAMEOBJ Iro1;
+	GAMEOBJ Iro2;
+
+	// Warriors
+	GAMEOBJ Life1;
+
+	// Pik
+	GAMEOBJ PikBuild1;
+
+	GAMEOBJ PikA2;
+	GAMEOBJ PikA3;
+	GAMEOBJ PikA4;
+	GAMEOBJ PikA5;
+	GAMEOBJ PikA6;
+	GAMEOBJ PikA7;
+	GAMEOBJ PikS2;
+	GAMEOBJ PikS3;
+	GAMEOBJ PikS4;
+	GAMEOBJ PikS5;
+	GAMEOBJ PikS6;
+	GAMEOBJ PikS7;
+
+	// Lut
+	GAMEOBJ LutS2;
+	GAMEOBJ LutS3;
+	GAMEOBJ LutS4;
+	GAMEOBJ LutS5;
+	GAMEOBJ LutS6;
+	GAMEOBJ LutS7;
+
+	GAMEOBJ LutRaz1; //MayKre(MA)RAZBROS
+	GAMEOBJ LutRaz2; //MayKre(MA)RAZBROS1
+
+	// Makamba
+	GAMEOBJ VoiA2;
+	GAMEOBJ VoiA3;
+	GAMEOBJ VoiA4;
+	GAMEOBJ VoiA5;
+	GAMEOBJ VoiA6;
+	GAMEOBJ VoiA7;
+
+	GAMEOBJ VoiS2;
+	GAMEOBJ VoiS3;
+	GAMEOBJ VoiS4;
+	GAMEOBJ VoiS5;
+	GAMEOBJ VoiS6;
+	GAMEOBJ VoiS7;
+
+	GAMEOBJ Strike1;
+	GAMEOBJ VoiSh1;	 // +5
+	GAMEOBJ VoiSh2;	 // +25 vs arrow
+
+	// Kri
+	GAMEOBJ KriBu1;	// -15% build speed
+	GAMEOBJ KriBu2;	// -25% build speed
+
+	// Parom
+	GAMEOBJ ParSpeed1; //CEN102MA
+	GAMEOBJ ParSpeed2; //CEN103MA
+	GAMEOBJ ParSpeed3; //CEN104MA
+	GAMEOBJ ParSpeed4; //CEN105MA
+	GAMEOBJ ParSpeed5; //CEN106MA
+	GAMEOBJ ParSpeed6; //CEN107MA
+
+	// Kanoe 3 build speed
+	GAMEOBJ Ka3Build1; //CEN96MA
+	GAMEOBJ Ka3Build2; //CEN97MA
+	GAMEOBJ Ka3Build3; //CEN98MA
+	GAMEOBJ Ka3Build4; //CEN99MA
+	GAMEOBJ Ka3Build5; //CEN100MA
+	GAMEOBJ Ka3Build6; //CEN101MA
+
+	// Fishing
+	GAMEOBJ Ka1Fishing1; //CEN90MA
+	GAMEOBJ Ka1Fishing2; //CEN91MA
+	GAMEOBJ Ka1Fishing3; //CEN92MA
+	GAMEOBJ Ka1Fishing4; //CEN93MA
+	GAMEOBJ Ka1Fishing5; //CEN94MA
+	GAMEOBJ Ka1Fishing6; //CEN95MA
+
+};
+
+class MayNation {
+public:
+	MayNation();
+	MayUnits Unit;
+	MayBuildings Build;
+	MayUpgrades Upg;
+};
+extern MayNation May;
+
+#endif
