@@ -1578,10 +1578,12 @@ void AICity::CrewProcess(){
 						else{
 							if(Formation){
 								if(NotHorsemen){
+										/*
 										if (N >= 196) {
 											if (BRN->Strelok) CreateFormation(NatID, &Officer, &Baraban, &Flag, &BRN->Group, &Squad, "#LINE196");
 											else CreateFormation(NatID, &Officer, &Baraban, &Flag, &BRN->Group, &Squad, "#KARE196");
 										}
+										*/
 										if (N >= 120){ 
 											if (BRN->Strelok) CreateFormation(NatID,&Officer,&Baraban,&Flag,&BRN->Group,&Squad,"#LINE120");
 											else CreateFormation(NatID,&Officer,&Baraban,&Flag,&BRN->Group,&Squad,"#KARE120");

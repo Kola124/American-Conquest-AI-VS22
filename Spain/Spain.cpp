@@ -70,19 +70,19 @@ void Script(){
 	const int CanBuild=1;
 
 	// Role planing
-	city->AddBranch(Spn.Unit.Pik.Index,brBack,35,226);
+	/*city->AddBranch(Spn.Unit.Pik.Index, brBack, 35, 226);
 	city->AddBranch(Spn.Unit.S15.Index,brBack,35,306);
 	city->AddBranch(Spn.Unit.S17.Index,brBack,35,346);
 	city->AddBranch(Spn.Unit.S18.Index,brBack,600,500);
 	city->AddBranch(Spn.Unit.Rei.Index,brBack,79,132);
-	city->AddBranch(Spn.Unit.Sha.Index,brBack,600,500);
+	city->AddBranch(Spn.Unit.Sha.Index,brBack,600,500);*/
 
-	Branch* Pik=city->AddBranch(Spn.Unit.Pik.Index,0,0,0);
-	Branch* S15=city->AddBranch(Spn.Unit.S15.Index,0,0,0);
-	Branch* S17=city->AddBranch(Spn.Unit.S17.Index,0,0,0);
-	Branch* S18=city->AddBranch(Spn.Unit.S18.Index,0,0,0);
-	Branch* Rei=city->AddBranch(Spn.Unit.Rei.Index,0,0,0);
-	Branch* Sha=city->AddBranch(Spn.Unit.Sha.Index,0,0,0);
+	Branch* Pik= city->AddBranch(Spn.Unit.Pik.Index, brBack, 35, 226);
+	Branch* S15= city->AddBranch(Spn.Unit.S15.Index, brBack, 35, 306);
+	Branch* S17= city->AddBranch(Spn.Unit.S17.Index, brBack, 35, 346);
+	Branch* S18= city->AddBranch(Spn.Unit.S18.Index, brBack, 600, 500);
+	Branch* Rei= city->AddBranch(Spn.Unit.Rei.Index, brBack, 79, 132);
+	Branch* Sha= city->AddBranch(Spn.Unit.Sha.Index, brBack, 600, 500);
 
 	Pik->Prio[brForward] = 3;	Pik->Part[brForward] = 1;	Pik->Type[brForward] = btStorm;	
 	Pik->Prio[brCenter] = 2;	Pik->Part[brCenter] = 0;	Pik->Type[brCenter] = btKillers;	

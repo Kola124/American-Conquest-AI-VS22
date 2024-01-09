@@ -13,7 +13,7 @@ DLLIMPORT void AddUN(char* File,int Line,int Param,int Type);
 //#define addrand(v)
 //#define addname(v)
 
-#pragma comment(linker,"/DEFAULTLIB:D:\\ACR\\dmcr.lib")
+#pragma comment(linker,"/DEFAULTLIB:..\\..\\dmcr.lib")
 
 DLLIMPORT void SGP_RepairBuilding(GAMEOBJ* Grp,byte Type,int Index);
 

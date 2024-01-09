@@ -74,32 +74,29 @@ void Script(){
 	const bool CanBuild=1;
 
 	// Role planing
-	city->AddBranch(USA.Unit.Pik.Index, brBack, 36, 1000);
-	city->AddBranch(USA.Unit.S15.Index, brBack, 36, 1000);
-	city->AddBranch(USA.Unit.S17.Index, brBack, 36, 1000);
-	city->AddBranch(USA.Unit.S18.Index, brBack, 36, 1000);
-	city->AddBranch(USA.Unit.Rei.Index, brBack, 79, 1000);
-	city->AddBranch(USA.Unit.Sha.Index, brBack, 400, 500);
-	city->AddBranch(USA.Unit.Tap.Index, brBack, 100, 120);
-	city->AddBranch(USA.Unit.Mil.Index, brBack, 50, 60);
 
-	Branch* Pik=city->AddBranch(USA.Unit.Pik.Index, 0, 0, 0);
-	Branch* S15=city->AddBranch(USA.Unit.S15.Index, 0, 0, 0);
-	Branch* S17=city->AddBranch(USA.Unit.S17.Index, 0, 0, 0);
-	Branch* S18=city->AddBranch(USA.Unit.S18.Index, 0, 0, 0);
-	Branch* Rei=city->AddBranch(USA.Unit.Rei.Index, 0, 0, 0);
-	Branch* Sha=city->AddBranch(USA.Unit.Sha.Index, 0, 0, 0);
-	Branch* Tap=city->AddBranch(USA.Unit.Tap.Index, 0, 0, 0);
-	Branch* Mil=city->AddBranch(USA.Unit.Mil.Index, 0, 0, 0);
+	Branch* Pik= city->AddBranch(USA.Unit.Pik.Index, brBack, 36, 1000);
+	Branch* S15= city->AddBranch(USA.Unit.S15.Index, brBack, 36, 1000);
+	Branch* S17= city->AddBranch(USA.Unit.S17.Index, brBack, 36, 120);
+	Branch* S18= city->AddBranch(USA.Unit.S18.Index, brBack, 36, 120);
+	Branch* Rei= city->AddBranch(USA.Unit.Rei.Index, brBack, 79, 1000);
+	Branch* Sha=city->AddBranch(USA.Unit.Sha.Index, brBack, 400, 500);
+	Branch* Tap= city->AddBranch(USA.Unit.Tap.Index, brBack, 100, 120);
+	Branch* Mil= city->AddBranch(USA.Unit.Mil.Index, brBack, 50, 60);
 
-	Branch* B18=city->AddBranch(USA.Unit.B18.Index, 0, 0, 0);
-	Branch* F18=city->AddBranch(USA.Unit.F18.Index, 0, 0, 0);
-	Branch* O18=city->AddBranch(USA.Unit.O18.Index, 0, 0, 0);
+	Branch* B17 = city->AddBranch(USA.Unit.B17.Index, brBack, 1, 5);
+	Branch* F17 = city->AddBranch(USA.Unit.F17.Index, brBack, 1, 5);
+	Branch* O17 = city->AddBranch(USA.Unit.O17.Index, brBack, 1, 5);
+
+	Branch* B18 = city->AddBranch(USA.Unit.B18.Index, brBack, 1, 5);
+	Branch* F18 = city->AddBranch(USA.Unit.F18.Index, brBack, 1, 5);
+	Branch* O18 = city->AddBranch(USA.Unit.O18.Index, brBack, 1, 5);
 
 	Pik->Prio[brForward] = 3;	Pik->Part[brForward] = 1;	Pik->Type[brForward] = btStorm;	
 	Pik->Prio[brCenter] = 2;	Pik->Part[brCenter] = 0;	Pik->Type[brCenter] = btKillers;	
 								if(GetDifficulty()<2) Pik->Part[brCenter] = 1;
-	Pik->Prio[brBack] = 0;		Pik->Part[brBack] = 0;
+	Pik->Prio[brBack] = 0;		Pik->Part[brBack] = 0;	Pik->Type[brBack] = btStorm;
+	Pik->Formation = 1;
 
 	S15->Prio[brForward] = 0;	S15->Part[brForward] = 0;
 	S15->Prio[brCenter] = 1;	S15->Part[brCenter] = 1;	
@@ -108,7 +105,7 @@ void Script(){
 	S15->Strelok = 1;
 	if (!GetUnits(&USA.Build.Kr8)) {
 		S15->Formation = 1;
-		S15->Type[brCenter] = btTomahawk;
+		S15->Type[brCenter] = btRifleman;
 	}
 	if (GetUnits(&USA.Build.Kr8)) {
 		S15->Formation = 0;
@@ -122,16 +119,17 @@ void Script(){
 	S17->Formation = 1;
 	S17->Strelok = 1;
 	if (!UpgIsDone(&USA.Upg.S18Unlock)) {
-		S17->Type[brCenter] = btTomahawk;
-		S17->Type[brForward] = btTomahawk;
+		S17->Type[brCenter] = btRifleman;
+		S17->Type[brForward] = btRifleman;
+		S17->Type[brBack] = btRifleman;
 	}
 	if (UpgIsDone(&USA.Upg.S18Unlock)) {
 		S17->BaseGuard = 0;
 		S17->Type[brBack] = btKillers;
 	}
 
-	S18->Prio[brForward] = 3;	S18->Part[brForward] = 0;	S18->Type[brForward] = btTomahawk;
-	S18->Prio[brCenter] = 2;	S18->Part[brCenter] = 1;	S18->Type[brCenter] = btTomahawk;
+	S18->Prio[brForward] = 3;	S18->Part[brForward] = 0;	S18->Type[brForward] = btRifleman;
+	S18->Prio[brCenter] = 2;	S18->Part[brCenter] = 1;	S18->Type[brCenter] = btRifleman;
 	S18->Prio[brBack] = 0;		S18->Part[brBack] = 0;
 	S18->Formation=1;
 	S18->Strelok = 1;
@@ -240,13 +238,25 @@ void Script(){
 	{
 		if (UpgIsDone(&USA.Upg.S18Unlock)) {
 			TryUnit(&USA.Unit.O18, 5, 20, 100);
-			TryUnit(&USA.Unit.B18, 5, 20, 100);
-			TryUnit(&USA.Unit.F18, 5, 20, 100);
 		}
 		else {
 			TryUnit(&USA.Unit.O17, 5, 20, 100);
-			TryUnit(&USA.Unit.B17, 5, 20, 100);
+		}
+	}
+	if (GetUnits(&USA.Unit.F18) + GetUnits(&USA.Unit.F17) < 5) {
+		if (UpgIsDone(&USA.Upg.S18Unlock)) {
+			TryUnit(&USA.Unit.F18, 5, 20, 100);
+		}
+		else {
 			TryUnit(&USA.Unit.F17, 5, 20, 100);
+		}
+	}
+	if (GetUnits(&USA.Unit.B18) + GetUnits(&USA.Unit.B17) < 5) {
+		if (UpgIsDone(&USA.Upg.S18Unlock)) {
+			TryUnit(&USA.Unit.B18, 5, 20, 100);
+		}
+		else {
+			TryUnit(&USA.Unit.B17, 5, 20, 100);
 		}
 	}
 
